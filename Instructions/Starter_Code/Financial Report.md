@@ -626,8 +626,7 @@ This is a sample of the price evolution for some simulations:
     </tr>
   </tbody>
 </table>
-<p>5 rows × 500 columns</p>
-</div>
+
 
  We can visualize the simulation:
 
@@ -703,7 +702,8 @@ We found above that the expected cumulative return at the 10th percentile is 2.2
 
 How would a 50% increase in the initial investment amount affect the 4% retirement withdrawal?
 
-A 50% increase in the initial investment is still not enough. The  retirement portfolio value after 30 years would be (30,000 * 2.26) = 67,800. This figure is still very far away from the 221,670 total projected income. To replace income over 30 years the initial investment amount would have to be at least (221,670 / 2.26) = 98,084.
+A 50% increase in the initial investment is still not enough. The  retirement portfolio value after 30 years would be (30,000 * 2.26) = 67,800. This figure is still very far away from the 221,670 total projected income. To replace income over 30 years the initial investment amount would have to be at least (221,670 / 2.26) = 98,084. 
+
 
 ### Optional Challenge
 
