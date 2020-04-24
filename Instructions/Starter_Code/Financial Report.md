@@ -1,7 +1,7 @@
 
 # Budget Analysis
 
-We start our analysis by fetching transactions for the last 90 days. The categories in that set of data are the following:
+We start our analysis by fetching transactions for the last 90 days. We are using the Plaid API and the sandbox dataset they make available. The categories in that set of data are the following:
 
 
     ['Payment']
@@ -57,26 +57,9 @@ We start our analysis by fetching transactions for the last 90 days. The categor
     ['Shops', 'Sporting Goods']
     
 
-We are then able to build a data_frame that provides us with a clean list of transactions by date. This is a small sample:
+We are then able to build a dataframe that provides us with a clean list of transactions by date. This is a small sample:
 
 
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -133,27 +116,12 @@ We are then able to build a data_frame that provides us with a clean list of tra
 
 
 
-# Budget Analysis
 Let's  analyse the customer's budget. We can calculate the expenses per category:
 
 
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -199,23 +167,10 @@ This can be illustrated in the following pie chart:
 
 
 
-    array([<matplotlib.axes._subplots.AxesSubplot object at 0x000001B08E011B00>],
-          dtype=object)
-
-
-
-
 ![png](output_31_1.png)
 
 
 We can also provide the number of transactions per category:
-
-
-
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1b08f16c898>
-
 
 
 
@@ -228,20 +183,7 @@ We can also provide the number of transactions per category:
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -276,13 +218,6 @@ We can also provide the number of transactions per category:
 
 
 
-
-
-    <matplotlib.axes._subplots.AxesSubplot at 0x1b08f1e9a20>
-
-
-
-
 ![png](output_35_1.png)
 
 
@@ -310,7 +245,7 @@ We need to fetch the income data from the sandbox
 
 
 
-    Last year's income before tax was: $7285
+Last year's income before tax was: $7285
     
 
 #### Current Monthly Income
@@ -334,24 +269,6 @@ This is a sample of data for AGG
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -424,24 +341,7 @@ This is a sample for SPY:
 
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead tr th {
-        text-align: left;
-    }
-
-    .dataframe thead tr:last-of-type th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr>
@@ -514,21 +414,6 @@ This is a sample for SPY:
 We are only interested in the close:
 
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -591,21 +476,6 @@ In order to run the MC simulation we need to save the close of the last day:
 We will use 500 simulations going forward in time 30 years. The assumption is that prices are normally distributed. The portfolio will be made of 60% AGG and 40%  SPY
 This is a sample of the price evolution for some simulations:
 
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -841,20 +711,6 @@ In this section, we will calculate and plot the cumulative returns for the media
 
 This is a sample of the cumulative returns for those quantiles:
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -902,20 +758,6 @@ Harold was really impressed with your work on this planner, but commented that 3
 Let's use the median as the statistic we want to achieve after 30 years
 
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
