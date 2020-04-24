@@ -177,7 +177,7 @@ We can also provide the number of transactions per category:
 ![png](output_32_1.png)
 
 
-### These are the expenses per month:
+These are the expenses per month:
 
 
 
